@@ -8,7 +8,6 @@ const Pokemons = ({pokemons, isLoading, count}) => {
         <Row>
         {pokemons && pokemons.map((pokemon, index) => {
               return (
-                
                   <Col>
                   <PokemonCard
                     key={index}

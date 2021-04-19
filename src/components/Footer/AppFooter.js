@@ -1,7 +1,7 @@
 import React from "react";
 import houm_logo from "../../assets/imgs/houm_icon.png";
 import { Row, Col, Layout } from "antd";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import COLORS from "../../constants/colors";
 
 const { Footer } = Layout;
@@ -18,13 +18,13 @@ const AppFooter = () => {
         </Col>
         <Col span={8}>
         <Row>
-                <Link style={{ textDecoration: 'none', color: COLORS.GREY }} to='https://houm.com/cl/'> Ir a Houm</Link>
+                <a style={{ textDecoration: 'none', color: COLORS.GREY }} href='https://houm.com/cl/'> Ir a Houm</a>
             </Row>
             <Row>
-                <Link style={{ textDecoration: 'none', color: COLORS.GREY }} to='https://houm.com/cl/'> Ir a Instagram</Link>
+                <a style={{ textDecoration: 'none', color: COLORS.GREY }} href='https://houm.com/cl/'> Ir a Instagram</a>
             </Row>
             <Row>
-                <Link style={{ textDecoration: 'none', color: COLORS.GREY }} to='https://houm.com/cl/'> Ir a Facebook</Link>
+                <a style={{ textDecoration: 'none', color: COLORS.GREY }} href='https://houm.com/cl/'> Ir a Facebook</a>
             </Row>
         </Col>
       </Row>

@@ -25,7 +25,6 @@ const AllPokemon = () => {
   };
 
   const morePokemon = () => {
-    setIsLoading(true)
     getMorePokemons(count + 19).then(data => {
       setDefaultPokemons((defaultPokemons)  => {
         return [...new Set([...defaultPokemons, ...data["results"]])]});

@@ -8,10 +8,7 @@ const Pokemons = ({pokemons, isLoading, count}) => {
         <Row>
         {pokemons && pokemons.map((pokemon, index) => {
               return (
-                <>
-                {isLoading ? (
-                  <Skeleton />
-                )  : (
+                
                   <Col>
                   <PokemonCard
                     key={index}
@@ -20,8 +17,6 @@ const Pokemons = ({pokemons, isLoading, count}) => {
                     loading={isLoading}
                   />
                 </Col>
-                )} 
-                </>
               );
             })}
         </Row>
